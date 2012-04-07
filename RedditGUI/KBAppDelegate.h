@@ -8,7 +8,12 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface KBAppDelegate : NSObject <NSApplicationDelegate>
+@class KBWindowController;
+
+@interface KBAppDelegate : NSObject <NSApplicationDelegate> {
+    KBWindowController * windowController;
+}
+
 
 @property (assign) IBOutlet NSWindow *window;
 

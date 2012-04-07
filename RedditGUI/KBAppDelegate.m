@@ -7,14 +7,23 @@
 //
 
 #import "KBAppDelegate.h"
+#import "KBWindowController.h"
 
 @implementation KBAppDelegate
 
 @synthesize window = _window;
 
+- (IBAction)newDocument:(id)sender
+{
+    if (windowController == NULL)
+		windowController = [[KBWindowController alloc] initWithWindowNibName:@"MainWindow"];
+	
+	[windowController showWindow:self];
+}
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    [self newDocument:self];
 }
 
 @end
