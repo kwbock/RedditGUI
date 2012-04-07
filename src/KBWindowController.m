@@ -10,9 +10,6 @@
 #import "KBLoginViewController.h"
 #import "KBRedditSplitViewController.h"
 
-NSString *const kLoginTitle		= @"Login View";
-NSString *const kRedditTitle    = @"Reddit Split View";
-
 @implementation KBWindowController
 
 - (id)initWithWindow:(NSWindow *)window
