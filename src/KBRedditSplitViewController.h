@@ -8,6 +8,13 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface KBRedditSplitViewController : NSViewController
+@interface KBRedditSplitViewController : NSViewController <NSOutlineViewDelegate, NSOutlineViewDataSource> {
+    
+    NSArray *_topLevelItems;
+    NSMutableDictionary *_childrenDictionary;
+    IBOutlet NSOutlineView *_sidebarOutlineView;
+}
+
+
 
 @end

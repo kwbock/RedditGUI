@@ -8,12 +8,12 @@
 
 #import "KBLoginViewController.h"
 #import "KBRedditSplitViewController.h"
+#import "KBWindowController.h"
 
-@interface KBLoginViewController ()
-
-@end
 
 @implementation KBLoginViewController
+
+@synthesize windowController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,10 +28,11 @@
 #pragma mark - Actions
 - (void)login:(id)sender
 {
-    KBRedditSplitViewController * redditViewController = [[KBRedditSplitViewController alloc] initWithNibName:@"RedditSplitView" bundle:nil];
-    [[[self view] superview] addSubview:[redditViewController view]];
-    
+    //KBRedditSplitViewController * redditViewController = [[KBRedditSplitViewController alloc] initWithNibName:@"RedditSplitView" bundle:nil];
+    //[[[self view] superview] addSubview:[redditViewController view]];
+    //[[self view] superview]
     [[self view] removeFromSuperview];
+    [[self windowController] changeViewController:kRedditView];
 }
 
 @end

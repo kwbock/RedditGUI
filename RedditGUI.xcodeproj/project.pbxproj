@@ -19,6 +19,8 @@
 		27780921152FC3E00085D0AB /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27780920152FC3E00085D0AB /* LoginView.xib */; };
 		27780929152FCE2D0085D0AB /* RedditSplitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27780928152FCE2D0085D0AB /* RedditSplitView.xib */; };
 		2778092C152FCE810085D0AB /* KBRedditSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2778092B152FCE810085D0AB /* KBRedditSplitViewController.m */; };
+		2778093615308AF30085D0AB /* KBSidebarTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2778093515308AF30085D0AB /* KBSidebarTableCellView.m */; };
+		2778093D153094380085D0AB /* KBConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2778093C153094380085D0AB /* KBConstants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,10 @@
 		27780928152FCE2D0085D0AB /* RedditSplitView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RedditSplitView.xib; path = views/RedditSplitView.xib; sourceTree = "<group>"; };
 		2778092A152FCE810085D0AB /* KBRedditSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBRedditSplitViewController.h; path = src/KBRedditSplitViewController.h; sourceTree = "<group>"; };
 		2778092B152FCE810085D0AB /* KBRedditSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBRedditSplitViewController.m; path = src/KBRedditSplitViewController.m; sourceTree = "<group>"; };
+		2778093415308AF30085D0AB /* KBSidebarTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBSidebarTableCellView.h; path = src/KBSidebarTableCellView.h; sourceTree = "<group>"; };
+		2778093515308AF30085D0AB /* KBSidebarTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBSidebarTableCellView.m; path = src/KBSidebarTableCellView.m; sourceTree = "<group>"; };
+		2778093B153093A10085D0AB /* KBConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBConstants.h; path = src/KBConstants.h; sourceTree = SOURCE_ROOT; };
+		2778093C153094380085D0AB /* KBConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBConstants.m; path = src/KBConstants.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,8 @@
 				277808FD152FC1A40085D0AB /* main.m */,
 				277808FF152FC1A40085D0AB /* RedditGUI-Prefix.pch */,
 				27780900152FC1A40085D0AB /* Credits.rtf */,
+				2778093B153093A10085D0AB /* KBConstants.h */,
+				2778093C153094380085D0AB /* KBConstants.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -122,6 +130,8 @@
 				27780910152FC1D80085D0AB /* ViewControllers */,
 				27780903152FC1A40085D0AB /* KBAppDelegate.h */,
 				27780904152FC1A40085D0AB /* KBAppDelegate.m */,
+				2778093415308AF30085D0AB /* KBSidebarTableCellView.h */,
+				2778093515308AF30085D0AB /* KBSidebarTableCellView.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -222,6 +232,8 @@
 				27780913152FC1FF0085D0AB /* KBWindowController.m in Sources */,
 				2778091F152FC3B70085D0AB /* KBLoginViewController.m in Sources */,
 				2778092C152FCE810085D0AB /* KBRedditSplitViewController.m in Sources */,
+				2778093615308AF30085D0AB /* KBSidebarTableCellView.m in Sources */,
+				2778093D153094380085D0AB /* KBConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

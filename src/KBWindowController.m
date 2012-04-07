@@ -10,8 +10,8 @@
 #import "KBLoginViewController.h"
 #import "KBRedditSplitViewController.h"
 
-NSString *const kLoginTitle		= @"LoginView";
-NSString *const kRedditTitle    = @"RedditSplitView";
+NSString *const kLoginTitle		= @"Login View";
+NSString *const kRedditTitle    = @"Reddit Split View";
 
 @implementation KBWindowController
 
@@ -28,10 +28,9 @@ NSString *const kRedditTitle    = @"RedditSplitView";
 - (void)windowDidLoad
 {
     [super windowDidLoad];
-    // TODO: add ability to store login in keychain/somewhere else
-    //load the login view on initial load
     KBLoginViewController* loginViewController =
-    [[KBLoginViewController alloc] initWithNibName:kLoginTitle bundle:nil];
+    [[KBLoginViewController alloc] initWithNibName:kLoginViewNibName bundle:nil];
+    [loginViewController setWindowController:self];
     if (loginViewController != nil)
     {
         currentViewController = loginViewController;	// keep track of the current view controller
@@ -43,6 +42,32 @@ NSString *const kRedditTitle    = @"RedditSplitView";
 	
 	// make sure we automatically resize the controller's view to the current window size
 	[[currentViewController view] setFrame: [targetView bounds]];
+}
+
+- (void)changeViewController:(int)view
+{
+    switch (view) {
+        case kLoginView:
+            currentViewController = [[KBLoginViewController alloc] initWithNibName:kLoginViewNibName bundle:nil];
+            [(KBLoginViewController*)currentViewController setWindowController:self];
+            [currentViewController setTitle:kLoginTitle];
+            break;
+        case kRedditView:
+            NSLog(@"reddit view called");
+            currentViewController = [[KBRedditSplitViewController alloc] initWithNibName:kRedditViewNibName bundle:nil];
+            [currentViewController setTitle:kRedditTitle];
+            break;
+        default:
+            break;
+    }
+    //sets it to pin to sides for resizing
+    NSView *newView = [currentViewController view];
+    [newView setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
+    // embed the current view to our host view
+    [targetView addSubview: newView];
+    
+    // make sure we automatically resize the controller's view to the current window size
+    [[currentViewController view] setFrame: [targetView bounds]];
 }
 
 @end

@@ -12,4 +12,6 @@
     IBOutlet NSView     *targetView;				// the host view
 	NSViewController	*currentViewController;     // the current view controller
 }
+
+- (void)changeViewController:(int)view;
 @end
