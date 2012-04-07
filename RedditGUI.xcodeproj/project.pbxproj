@@ -1,0 +1,296 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		277808F2152FC1A40085D0AB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277808F1152FC1A40085D0AB /* Cocoa.framework */; };
+		277808FC152FC1A40085D0AB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 277808FA152FC1A40085D0AB /* InfoPlist.strings */; };
+		277808FE152FC1A40085D0AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 277808FD152FC1A40085D0AB /* main.m */; };
+		27780902152FC1A40085D0AB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 27780900152FC1A40085D0AB /* Credits.rtf */; };
+		27780905152FC1A40085D0AB /* KBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27780904152FC1A40085D0AB /* KBAppDelegate.m */; };
+		27780908152FC1A40085D0AB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27780906152FC1A40085D0AB /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		277808ED152FC1A40085D0AB /* RedditGUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedditGUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		277808F1152FC1A40085D0AB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		277808F4152FC1A40085D0AB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		277808F5152FC1A40085D0AB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		277808F6152FC1A40085D0AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		277808F9152FC1A40085D0AB /* RedditGUI-Info.plist */ = {isa = PBXFileReference; path = "RedditGUI-Info.plist"; sourceTree = "<group>"; };
+		277808FB152FC1A40085D0AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		277808FD152FC1A40085D0AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		277808FF152FC1A40085D0AB /* RedditGUI-Prefix.pch */ = {isa = PBXFileReference; path = "RedditGUI-Prefix.pch"; sourceTree = "<group>"; };
+		27780901152FC1A40085D0AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		27780903152FC1A40085D0AB /* KBAppDelegate.h */ = {isa = PBXFileReference; path = KBAppDelegate.h; sourceTree = "<group>"; };
+		27780904152FC1A40085D0AB /* KBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KBAppDelegate.m; sourceTree = "<group>"; };
+		27780907152FC1A40085D0AB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		277808EA152FC1A40085D0AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				277808F2152FC1A40085D0AB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		277808E2152FC1A40085D0AB = {
+			isa = PBXGroup;
+			children = (
+				277808F7152FC1A40085D0AB /* RedditGUI */,
+				277808F0152FC1A40085D0AB /* Frameworks */,
+				277808EE152FC1A40085D0AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		277808EE152FC1A40085D0AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				277808ED152FC1A40085D0AB /* RedditGUI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		277808F0152FC1A40085D0AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				277808F1152FC1A40085D0AB /* Cocoa.framework */,
+				277808F3152FC1A40085D0AB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		277808F3152FC1A40085D0AB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				277808F4152FC1A40085D0AB /* AppKit.framework */,
+				277808F5152FC1A40085D0AB /* CoreData.framework */,
+				277808F6152FC1A40085D0AB /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		277808F7152FC1A40085D0AB /* RedditGUI */ = {
+			isa = PBXGroup;
+			children = (
+				27780903152FC1A40085D0AB /* KBAppDelegate.h */,
+				27780904152FC1A40085D0AB /* KBAppDelegate.m */,
+				27780906152FC1A40085D0AB /* MainMenu.xib */,
+				277808F8152FC1A40085D0AB /* Supporting Files */,
+			);
+			path = RedditGUI;
+			sourceTree = "<group>";
+		};
+		277808F8152FC1A40085D0AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				277808F9152FC1A40085D0AB /* RedditGUI-Info.plist */,
+				277808FA152FC1A40085D0AB /* InfoPlist.strings */,
+				277808FD152FC1A40085D0AB /* main.m */,
+				277808FF152FC1A40085D0AB /* RedditGUI-Prefix.pch */,
+				27780900152FC1A40085D0AB /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		277808EC152FC1A40085D0AB /* RedditGUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2778090B152FC1A40085D0AB /* Build configuration list for PBXNativeTarget "RedditGUI" */;
+			buildPhases = (
+				277808E9152FC1A40085D0AB /* Sources */,
+				277808EA152FC1A40085D0AB /* Frameworks */,
+				277808EB152FC1A40085D0AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RedditGUI;
+			productName = RedditGUI;
+			productReference = 277808ED152FC1A40085D0AB /* RedditGUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		277808E4152FC1A40085D0AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KB;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 277808E7152FC1A40085D0AB /* Build configuration list for PBXProject "RedditGUI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 277808E2152FC1A40085D0AB;
+			productRefGroup = 277808EE152FC1A40085D0AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				277808EC152FC1A40085D0AB /* RedditGUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		277808EB152FC1A40085D0AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				277808FC152FC1A40085D0AB /* InfoPlist.strings in Resources */,
+				27780902152FC1A40085D0AB /* Credits.rtf in Resources */,
+				27780908152FC1A40085D0AB /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		277808E9152FC1A40085D0AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				277808FE152FC1A40085D0AB /* main.m in Sources */,
+				27780905152FC1A40085D0AB /* KBAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		277808FA152FC1A40085D0AB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				277808FB152FC1A40085D0AB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		27780900152FC1A40085D0AB /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27780901152FC1A40085D0AB /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		27780906152FC1A40085D0AB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27780907152FC1A40085D0AB /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27780909152FC1A40085D0AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2778090A152FC1A40085D0AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2778090C152FC1A40085D0AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RedditGUI/RedditGUI-Prefix.pch";
+				INFOPLIST_FILE = "RedditGUI/RedditGUI-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2778090D152FC1A40085D0AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RedditGUI/RedditGUI-Prefix.pch";
+				INFOPLIST_FILE = "RedditGUI/RedditGUI-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		277808E7152FC1A40085D0AB /* Build configuration list for PBXProject "RedditGUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27780909152FC1A40085D0AB /* Debug */,
+				2778090A152FC1A40085D0AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2778090B152FC1A40085D0AB /* Build configuration list for PBXNativeTarget "RedditGUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2778090C152FC1A40085D0AB /* Debug */,
+				2778090D152FC1A40085D0AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 277808E4152FC1A40085D0AB /* Project object */;
+}
