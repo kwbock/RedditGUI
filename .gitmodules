@@ -1,0 +1,3 @@
+[submodule "KBRedditEngine"]
+	path = KBRedditEngine
+	url = git@github.com:kwbock/KBRedditEngine.git

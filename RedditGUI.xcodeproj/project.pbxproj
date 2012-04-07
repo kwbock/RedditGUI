@@ -23,6 +23,16 @@
 		2778093D153094380085D0AB /* KBConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2778093C153094380085D0AB /* KBConstants.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		277809561530AB790085D0AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2778094F1530AB790085D0AB /* KBRedditEngine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FBC42256144DD98E00025C0E;
+			remoteInfo = KBRedditEngine;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		277808ED152FC1A40085D0AB /* RedditGUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedditGUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		277808F1152FC1A40085D0AB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -50,6 +60,7 @@
 		2778093515308AF30085D0AB /* KBSidebarTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBSidebarTableCellView.m; path = src/KBSidebarTableCellView.m; sourceTree = "<group>"; };
 		2778093B153093A10085D0AB /* KBConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBConstants.h; path = src/KBConstants.h; sourceTree = SOURCE_ROOT; };
 		2778093C153094380085D0AB /* KBConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBConstants.m; path = src/KBConstants.m; sourceTree = SOURCE_ROOT; };
+		2778094F1530AB790085D0AB /* KBRedditEngine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KBRedditEngine.xcodeproj; path = KBRedditEngine/KBRedditEngine.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +78,7 @@
 		277808E2152FC1A40085D0AB = {
 			isa = PBXGroup;
 			children = (
+				2778094F1530AB790085D0AB /* KBRedditEngine.xcodeproj */,
 				2778090F152FC1B90085D0AB /* Resources */,
 				2778090E152FC1AB0085D0AB /* Classes */,
 				277808F7152FC1A40085D0AB /* RedditGUI */,
@@ -160,6 +172,14 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
+		277809501530AB790085D0AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				277809571530AB790085D0AB /* libKBRedditEngine.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -199,12 +219,28 @@
 			mainGroup = 277808E2152FC1A40085D0AB;
 			productRefGroup = 277808EE152FC1A40085D0AB /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 277809501530AB790085D0AB /* Products */;
+					ProjectRef = 2778094F1530AB790085D0AB /* KBRedditEngine.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				277808EC152FC1A40085D0AB /* RedditGUI */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		277809571530AB790085D0AB /* libKBRedditEngine.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKBRedditEngine.a;
+			remoteRef = 277809561530AB790085D0AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		277808EB152FC1A40085D0AB /* Resources */ = {
@@ -356,6 +392,7 @@
 				2778090D152FC1A40085D0AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
