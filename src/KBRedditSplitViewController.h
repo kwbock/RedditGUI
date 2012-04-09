@@ -8,13 +8,17 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class KBRedditEngine;
+
 @interface KBRedditSplitViewController : NSViewController <NSOutlineViewDelegate, NSOutlineViewDataSource> {
     
     NSArray *_topLevelItems;
     NSMutableDictionary *_childrenDictionary;
     IBOutlet NSOutlineView *_sidebarOutlineView;
+    
+    __weak KBRedditEngine * redditEngine;
 }
 
-
+@property (weak) KBRedditEngine * redditEngine;
 
 @end

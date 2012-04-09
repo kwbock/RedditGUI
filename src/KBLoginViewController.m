@@ -9,7 +9,7 @@
 #import "KBLoginViewController.h"
 #import "KBRedditSplitViewController.h"
 #import "KBWindowController.h"
-
+#import "KBRedditEngine.h"
 
 @implementation KBLoginViewController
 
@@ -29,6 +29,9 @@
 - (void)login:(id)sender
 {
     // 
+   // [[[self windowController] redditEngine] initWithUser:[userName stringValue] andPasswd:[password stringValue]];
+    [self windowController].redditEngine = [[KBRedditEngine alloc] initWithUser:[userName stringValue] andPasswd:[password stringValue]];
+    NSLog(@"%@", [[self windowController] redditEngine]);
     [[self view] removeFromSuperview];
     [[self windowController] changeViewController:kRedditView];
 }

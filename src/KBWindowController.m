@@ -9,14 +9,17 @@
 #import "KBWindowController.h"
 #import "KBLoginViewController.h"
 #import "KBRedditSplitViewController.h"
+#import "KBRedditEngine.h"
 
 @implementation KBWindowController
+
+@synthesize redditEngine;
 
 - (id)initWithWindow:(NSWindow *)window
 {
     self = [super initWithWindow:window];
     if (self) {
-        // Initialization code here.
+        //redditEngine = [KBRedditEngine alloc];
     }
     
     return self;
@@ -43,6 +46,7 @@
 
 - (void)changeViewController:(int)view
 {
+    NSLog(@"reddit engine: %@", self.redditEngine);
     switch (view) {
         case kLoginView:
             currentViewController = [[KBLoginViewController alloc] initWithNibName:kLoginViewNibName bundle:nil];
@@ -52,6 +56,9 @@
         case kRedditView:
             NSLog(@"reddit view called");
             currentViewController = [[KBRedditSplitViewController alloc] initWithNibName:kRedditViewNibName bundle:nil];
+            if ([self redditEngine]) {
+                [(KBRedditSplitViewController*)currentViewController setRedditEngine:[self redditEngine]];
+            }
             [currentViewController setTitle:kRedditTitle];
             break;
         default:

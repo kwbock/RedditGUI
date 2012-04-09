@@ -8,10 +8,15 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class KBRedditEngine;
+
 @interface KBWindowController : NSWindowController {
     IBOutlet NSView     *targetView;				// the host view
 	NSViewController	*currentViewController;     // the current view controller
+    KBRedditEngine      *redditEngine;
 }
+
+@property KBRedditEngine *redditEngine;
 
 - (void)changeViewController:(int)view;
 @end
